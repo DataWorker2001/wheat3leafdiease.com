@@ -1,4 +1,5 @@
-Flask==2.0.2
-Flask-Cors==3.0.10
-tensorflow==2.6.0
-numpy==1.21.4
+Flask
+Flask-Cors
+tensorflow
+numpy
+gunicorn
