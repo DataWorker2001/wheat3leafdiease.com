@@ -1,1 +1,1 @@
-# DL-Project-For-Beginner
+# Wheat Leaf Disease Detector Web App.
