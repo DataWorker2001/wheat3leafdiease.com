@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(100deg, rgb(233, 139, 233), rgb(223, 199, 154));
+}
+
+.img-preview {
+    width: max-content;
+    height: max-content;
+    position: relative;
+    border: 5px solid greenyellow;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.img-preview>div {
+    width: max-content;
+    height: max-content;
+    max-width: 100%;
+    max-height: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgb(189, 255, 232);
+    color: rgba(83, 83, 77, 0.459);
+    font-weight: bold;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.upload-label:hover {
+    background: #34495E;
+    color: #39D2B4;
+}
+
+.loader {
+    border: 8px solid rgb(114, 29, 114); /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
